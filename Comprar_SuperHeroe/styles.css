@@ -1,0 +1,314 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Diseño Nav bar*/
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0f0f;
+    padding: 0 3vw;
+    position: fixed;
+    z-index: 999;
+}
+
+header ul{ 
+    display: flex;
+    list-style-type: none;
+}
+header img{
+    width: 130px;
+}
+
+header li{
+    margin: 0 20px;
+}
+
+.Logo-marvel{
+    width: 115px;
+    height: 60%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 2px;
+}
+
+.Logo-marvel h3{
+    letter-spacing: 0.2rem;
+    font-size: 1-1rem;
+    font-weight: 300;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.home:hover{
+    color: red;
+    font-size: 1.25rem;
+    color: gold;
+}
+
+.wh-superhero{
+    background-color: red;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+}
+
+.wh-superhero:hover{
+    background-color: rgb(241, 48, 48);
+    font-size: 1.05rem; 
+    color: gold;
+}
+
+main{
+    padding: 12vh 0;
+}
+/*Diseño form*/
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+
+/*Diseño canva carta*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.canva-cards{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canva-cards h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: red;
+    margin: 30px 0;
+    margin-bottom: 10px;
+}
+
+.cartas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carta{
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.carta h2{
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+
+.hero-info{
+    text-align: center;
+}
+
+/*Diseño imagenes*/
+
+.img-hero img{
+    width: 140px;
+    height: 140px;
+    margin: 10px 0;
+}
+/*Diseño carta individual*/
+
+.hulk{
+    box-shadow: 1px 1px 2px rgba(0, 100, 0, 0.3);
+}
+
+.hulk h2{
+    color: darkgreen
+}
+
+.iroman{
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.3);
+}
+
+.iroman h2{
+    color: red;
+}
+.thor{
+    box-shadow: 1px 1px 2px rgba(218, 165, 32, 0.6);
+}
+
+.thor h2{
+    color: darkgoldenrod
+}
+
+.spiderman{
+    box-shadow: 1px 1px 2px rgba(255, 100, 100, 0.6);
+}
+
+.spiderman h2{
+    color: tomato
+}
+.capitan{
+    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.6);
+}
+
+.capitan h2{
+    color: darkblue
+}
+
+.deadpool{
+    box-shadow: 1px 1px 2px rgba(100, 0, 0, 0.6);
+}
+/*Diseño Boton*/
+
+.btn-popup{
+    margin: 10px 0;
+}
+
+.hero-info p{
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.hero-info h2{
+    margin: 10px 0;
+}
+
+/*Diseño boton individual*/
+.btn{
+    width: 120px;
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-iroman{
+    background: linear-gradient(135deg, #FF3333, #FFD700);
+}
+
+.btn-hulk{
+    background: linear-gradient(135deg, #008000, #330033);
+}
+
+.btn-spiderman{
+    background: linear-gradient(135deg, #800000, #000080);
+
+}
+
+.btn-thor{
+    background: linear-gradient(135deg, #B8860B, #808080);
+}
+
+.btn-deadpool{
+    background: linear-gradient(135deg, #8B0000, #000000);
+
+}
+
+.btn-capitan{
+    background: linear-gradient(135deg, #8B0000, #000080, #A9A9A9);
+}
+/*Diseño pop up*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    background-color: white;
+    width: 50%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

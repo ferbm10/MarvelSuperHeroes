@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de nombres de superhéroes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="Logo-marvel"><img src="/Assets/Marvel_Logo.svg.png"/></div>
+        <nav>
+            <ul>
+                <li><a href="/Comprar_SuperHeroe/index.html" class="home">Home</a></li>
+                <li>
+                    <a href="/Generar_SuberHeroe/index.html">
+                        <div class="wh-superhero">
+                            What SuperHero I am?
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>What is your superhero name?</h1>
+        <h2>Enter your name and the month of your birth</h2>
+        <p id="result"></p>
+        <div id="image-container"></div>
+        
+        <form id="form">
+            <input type="text" id="name" placeholder="Name" required>
+            <select id="month" required>
+                <option value="" disabled selected>Month</option>
+                <option value="Shield">Enero</option>
+                <option value="Arrow">Febrero</option>
+                <option value="Justice">Marzo</option>
+                <option value="Thunder">Abril</option>
+                <option value="Rider">Mayo</option>
+                <option value="Falcon">Junio</option>
+                <option value="Ninja">Julio</option>
+                <option value="Spider">Agosto</option>
+                <option value="Beast">Septiembre</option>
+                <option value="Blade">Octubre</option>
+                <option value="Hulk">Noviembre</option>
+                <option value="Doom">Diciembre</option>
+            </select>
+            <button type="submit" id="button">Generate</button>
+        </form>
+        
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

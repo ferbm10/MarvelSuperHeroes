@@ -5,11 +5,11 @@ const firstWords = {
 const secondWords = ["Shield", "Arrow", "Justice", "Thunder", "Rider", "Falcon", "Ninja", "Spider", "Beast", "Blade", "Hulk", "Doom"];
 
 function generateSuperheroName(name, month) {
-        let firstLetter = name.charAt(0).toUpperCase();
-        let firstWord = firstWords[firstLetter];
-        let secondWord = month;
-        let superheroName = firstWord + " " + secondWord;
-        return superheroName;
+    let firstLetter = name.charAt(0).toUpperCase();
+    let firstWord = firstWords[firstLetter];
+    let secondWord = month;
+    let superheroName = firstWord + " " + secondWord;
+    return superheroName;
 }
 
 // Obtener los elementos del HTML
@@ -18,6 +18,7 @@ const nameInput = document.getElementById("name");
 const monthInput = document.getElementById("month");
 const button = document.getElementById("button");
 const result = document.getElementById("result");
+const imageContainer = document.getElementById("image-container");
 
 // Añadir un evento al hacer clic en el botón
 button.addEventListener("click", function(event) {
@@ -30,10 +31,26 @@ button.addEventListener("click", function(event) {
     if (name && month) {
         // Generar el nombre de superhéroe
         let superheroName = generateSuperheroName(name, month);
+        // Ocultar elementos
+        form.style.display = "none";
+        document.querySelector("h1").style.display = "none";
+        document.querySelector("h2").style.display = "none";
         // Mostrar el nombre de superhéroe en el párrafo
-        result.textContent = "Tu nombre de superhéroe es: " + superheroName;
+        result.textContent = "Your superhero name is: " + superheroName;
+        // Mostrar imagen proporcionada
+        let imagePath = "https://www.mundodeportivo.com/alfabeta/hero/2023/06/mejores-superheroes-que-no-son-de-dc-y-marvel.jpg?width=1200"; // URL de la imagen
+        let imageElement = document.createElement("img");
+        imageElement.src = imagePath;
+        imageElement.classList.add("superhero-image");
+        imageContainer.innerHTML = "";
+        imageContainer.appendChild(imageElement);
+        // Mostrar solo el nombre y la imagen
+        result.style.display = "block";
+        imageContainer.style.display = "block";
     } else {
         // Mostrar un mensaje de error
-        result.textContent = "Por favor, ingresa tu nombre y el mes de tu nacimiento";
+        result.textContent = "Please enter your name and the month of your birth";
     }
 });
+
+
