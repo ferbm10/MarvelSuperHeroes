@@ -1,4 +1,4 @@
-// Arrays con las palabras del gráfico
+// Arrays con las palabras de la imagen
 const firstWords = {
     'A': "Captain", 'B': "Wonder", 'C': "Super", 'D': "Phantom", 'E': "Dark", 'F': "Incredible", 'G': "Professor", 'H': "Iron", 'I': "Hawk", 'J': "Archer", 'K': "Steel", 'L': "Bolt", 'M': "Atomic", 'N': "Torch", 'O': "Space", 'P': "Mega", 'Q': "Turbo", 'R': "Fantastic", 'S': "Invisible", 'T': "Night", 'U': "Silver", 'V': "Aqua", 'W': "Amazing", 'X': "Giant", 'Y': "Rock", 'Z': "Power"
 };
